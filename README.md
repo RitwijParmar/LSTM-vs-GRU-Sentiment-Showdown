@@ -16,7 +16,7 @@ The project utilizes a large dataset of 1.6 million movie reviews, each labeled 
 * **Review Length Distribution**: Histograms of review lengths reveal a right-skewed distribution, with most reviews being under 200 words. This guided the decision for padding and truncating sequences to a uniform length.
 * **Word Frequencies**: Word clouds for positive and negative reviews visualize the most common terms associated with each sentiment. This analysis helps in understanding the lexical features that might distinguish between classes.
 
-![EDA Visualizations](assets/f9.jpg)
+![EDA Visualizations](assets/f9.png)
 
 ---
 
@@ -41,7 +41,7 @@ Both models were trained for 5 epochs and evaluated on a held-out test set. The 
 ### Baseline LSTM Performance
 The baseline model's training was unstable, as shown by the fluctuating validation accuracy and loss curves. The model struggled to generalize effectively from the training data.
 
-![Baseline Model Training Curves](assets/f10.jpg)
+![Baseline Model Training Curves](assets/f10.png)
 
 **Quantitative Test Results (Baseline):**
 * **Final Test Accuracy**: **54.8%**
@@ -57,7 +57,7 @@ The baseline model's training was unstable, as shown by the fluctuating validati
 ### Improved GRU Performance & Comparison
 The improved bidirectional GRU model achieved substantially better and more stable results. The validation accuracy consistently increased while the validation loss steadily decreased, indicating effective learning.
 
-![Validation Performance Comparison](assets/f13.jpg)
+![Validation Performance Comparison](assets/f13.png)
 
 **Quantitative Test Results (Improved Model):**
 * **Final Test Accuracy**: **82.2%**
